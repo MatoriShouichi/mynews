@@ -38,12 +38,26 @@
                             <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
                         </div>
                     </div>
-                    <div class="col-md-10">
-                        <input type="hidden" name="id" value="{{ $profile_form->id }}">
-                        {{ csrf_field() }}
-                        <input type="submit" class="btn btn-primary" value="更新">
+                    <div class="form-group row">
+                        <div class="col-md-10">
+                            <input type="hidden" name="id" value="{{ $profile_form->id }}">
+                            {{ csrf_field() }}
+                            <input type="submit" class="btn btn-primary" value="更新">
+                        </div>
                     </div>
                 </form>
+                <div class="row mt-5">
+                    <div class="col-md-4 mx-auto">
+                        <h2>編集履歴</h2>
+                        <ul class="list-group">
+                            @if ($profile_form->profiles_histories != NULL)
+                                @foreach ($profile_form->profiles_histories as $profile_history)
+                                    <li class="list-group-item">{{ $profile_history->edited_at }}</li>
+                                @endforeach
+                            @endif
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
