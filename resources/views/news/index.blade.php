@@ -1,7 +1,9 @@
 @extends('layouts.front')
 
+@section('title', 'TopPage')
 @section('content')
     <div class="container">
+        <p class="toppage_title">Welcome to MyNews</p>
         <hr color="#c0c0c0">
         @if (!is_null($headline))
             <div class="row">

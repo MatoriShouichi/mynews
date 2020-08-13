@@ -73,3 +73,19 @@ body {
 .table-profile thead th {
   vertical-align: bottom;
 }
+
+.toppage_title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-nav-mr {
+  margin-right: 20px;
+  margin-left: 180px;
+  font-size: 20px;
+}
+
+.navbar-nav-mr-link {
+  color: #000000;
+}

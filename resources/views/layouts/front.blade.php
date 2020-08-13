@@ -40,7 +40,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
-
+                            <li class="navbar-nav-mr"><a class="navbar-nav-mr-link" href="{{ url('/') }}">News</a></li>
+                            <li class="navbar-nav-mr"><a class="navbar-nav-mr-link" href="{{ url('/profile') }}">Profile</a></li>
+                            <li class="navbar-nav-mr"><a class="navbar-nav-mr-link" href="{{ url('/login') }}">Login</a></li>
                         </ul>
 
                         <!-- Right Side Of Navbar -->
